@@ -1,7 +1,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false|
+|name|string|null: false|
 |email|text|null: false|
 |password|text|null: false|
 
@@ -13,8 +13,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 
 ###Association
 - has_many :groups_users
@@ -36,6 +35,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
+|image|string||
 |date|integer|null: false|
 |time|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|

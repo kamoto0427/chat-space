@@ -34,7 +34,7 @@
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|string||
 |date|integer|null: false|
 |time|integer|null: false|

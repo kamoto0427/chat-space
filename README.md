@@ -36,8 +36,7 @@
 |------|----|-------|
 |text|text||
 |image|string||
-|date|integer|null: false|
-|time|integer|null: false|
+|created_at|integer||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 

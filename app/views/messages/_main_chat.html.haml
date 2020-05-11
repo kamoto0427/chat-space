@@ -1,0 +1,36 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__box
+      TECHCAMP
+      .main-chat__group-info__box__member
+        Member:
+        .main-chat__group-info__box__member__list
+          %ul.main-chat__group-info__box__member__list__member-list
+            %li.member-first abe
+            %li.member-second sato
+            %li.member-third suzuki
+    .main-chat__group-info__edit-btn
+      = link_to "#", class: "edit" do
+        Edit
+
+  .main-chat__message-list
+    .main-chat__message-list__box
+      .main-chat__message-list__box__name-date
+        .main-chat__message-list__box__name-date__name
+          name
+        .main-chat__message-list__box__name-date__date
+          date
+      .main-chat__message-list__box__text
+        おはよう！
+
+  .main-chat__message-form
+    .main-chat__message-form__box
+      %form.text
+        %input.input-text{ placeholder: "type a message", type: "text"}
+          .main-chat__message-form__box__image
+            %label{class: "input-box__image"}
+              = icon('fas', 'image')
+              %input{type: "file"}
+    .main-chat__message-form__send-btn
+      %form.send-btn
+        %input.send-btn{ type: "submit", name: "commit", value: "Send"}

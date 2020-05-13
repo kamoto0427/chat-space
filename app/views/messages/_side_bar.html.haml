@@ -1,12 +1,12 @@
 .side-bar
   .side-bar__user-name
     .side-bar__user-name__box
-      .side-bar__user-name__box__name
-        %p 名前
+      %h3.side-bar__user-name__box__name
+        = current_user.name
       .side-bar__user-name__box__btn
         = link_to "#", class: "side-bar__user-name__box__btn side-bar__user-name__box__btn--edit" do
           = icon('far', 'edit', class: "side-bar__user-name__box__btn--icon")
-        = link_to "#", class: "side-bar__user-name__box__btn side-bar__user-name__box__btn--cog" do
+        = link_to edit_user_path(current_user), class: "side-bar__user-name__box__btn side-bar__user-name__box__btn--cog" do
           = icon('fas', 'cog', class: "side-bar__user-name__box__btn--icon")
 
   .side-bar__group-list

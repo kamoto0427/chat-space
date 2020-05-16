@@ -89,13 +89,13 @@
       text-decoration: none;
       padding-top: 35px;
       padding-left: 40px;
-      position: relative;
+      // position: relative;
       &__member{
         color: #999999;
         font-size: 12px;
         display: flex;
-        position: absolute;
-        bottom: 1px;
+        // position: absolute;
+        margin-top: 15px;
         &__list{
           &__member-list{
             display: flex;
@@ -123,16 +123,17 @@
 
     
   
-  &__message-list {
+  &__message-lists {
     height: calc(100vh - 100px - 90px);
     width: 100%;
     background-color: #fafafa;
-    position: relative;
+    overflow: scroll;
+    // position: relative;
     &__box{
       height: 50px;
       padding: 35px 46px;
       padding-left: 40px;
-      position: absolute;
+      // position: absolute;
       &__name-date{
         height: 20px;
         width: 100%;
@@ -170,38 +171,34 @@
       height: 50px;
       display: flex;
       align-items: center;
-      .text{
+      .new_message{
         height: 50px;
         padding-left: 10px;
         display: flex;
         position: relative;
+        .input-text{
+          width: calc(100vw - 500px);
+        }
+        .main-chat__message-form__box__image{
+          font-size: 30px;
+          position: absolute;
+          left: calc(100vw - 525px);
+          .input-box__image{
+            input{display: none;}
+          }
+        }
       }
-      &__image{
-        font-size: 30px;
-        position: absolute;
-        left: calc(100vw - 525px);
+        .send-btn{
+          height: 50px;
+          width: 100px;
+          font-size: 15px;
+          font-weight: bold;
+          cursor: pointer;
+          background-color: rgb(16, 133, 223);
+          color: #ffffff;
+          margin-left: 15px;
+        }
       }
-    }
-    &__send-btn{
-      margin-right: 40px;
-      margin-left: 15px;
-      .send-btn{
-        height: 50px;
-        width: 100px;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        background-color: rgb(16, 133, 223);
-        color: #ffffff;
-      }
+
     }
   }
-}
-
-.input-text{
-  width: calc(100vw - 500px);
-}
-
-.input-box__image{
-  input{display: none;}
-}

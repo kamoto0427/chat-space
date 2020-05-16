@@ -10,10 +10,12 @@
           = icon('fas', 'cog', class: "side-bar__user-name__box__btn--icon")
 
   .side-bar__group-list
-    - current_user.groups.each do |group|
-      .side-bar__group-list__box1
-        = link_to '#' do
+    .side-bar__group-list__box1
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
           .side-bar__group-list__box1__group-name
             = group.name
           .side-bar__group-list__box1__text
-            メッセージはまだありません。
+            = group.show_last_message
+
+            

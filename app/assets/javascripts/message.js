@@ -66,6 +66,7 @@ $(function(){
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.send-btn').prop('disabled', false)
     });
   });
     var reloadMessages = function() {

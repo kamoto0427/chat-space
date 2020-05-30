@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -178,11 +179,12 @@
         position: relative;
         .input-text{
           width: calc(100vw - 500px);
+          padding-left: 10px;
         }
         .main-chat__message-form__box__image{
           font-size: 30px;
           position: absolute;
-          left: calc(100vw - 525px);
+          left: calc(100vw - 530px);
           .input-box__image{
             input{display: none;}
           }

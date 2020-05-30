@@ -3,38 +3,42 @@ $(function(){
   function buildHTML(message){
     if (message.image) {
       var html = 
-        `<div class="main-chat__message-lists__box" data-message-id=${message.id}>
-            <div class="main-chat__message-lists__box__name-date">
-              <div class="main-chat__message-lists__box__name-date__name">
-                ${message.user_name}
+        `<div class="message" data-message-id=${message.id}>
+          <div class="main-chat__message-lists__box">
+              <div class="main-chat__message-lists__box__name-date">
+                <div class="main-chat__message-lists__box__name-date__name">
+                  ${message.user_name}
+                </div>
+                <div class="main-chat__message-lists__box__name-date__date">
+                  ${message.created_at}
+                </div>
               </div>
-              <div class="main-chat__message-lists__box__name-date__date">
-                ${message.created_at}
+              <div class="main-chat__message-lists__box__text">
+                <p class="main-chat__message-lists__box__text__content">
+                  ${message.content}
+                </p>
               </div>
+              <img src=${message.image}>
             </div>
-            <div class="main-chat__message-lists__box__text">
-              <p class="main-chat__message-lists__box__text__content">
-                ${message.content}
-              </p>
-            </div>
-            <img src=${message.image}>
           </div>`
       return html;
     } else {
       var html =
-        `<div class="main-chat__message-lists__box" data-message-id=${message.id}>
-            <div class="main-chat__message-lists__box__name-date">
-              <div class="main-chat__message-lists__box__name-date__name">
-                ${message.user_name}
+        `<div class="message" data-message-id=${message.id}>
+          <div class="main-chat__message-lists__box">
+              <div class="main-chat__message-lists__box__name-date">
+                <div class="main-chat__message-lists__box__name-date__name">
+                  ${message.user_name}
+                </div>
+                <div class="main-chat__message-lists__box__name-date__date">
+                  ${message.created_at}
+                </div>
               </div>
-              <div class="main-chat__message-lists__box__name-date__date">
-                ${message.created_at}
+              <div class="main-chat__message-lists__box__text">
+                <p class="main-chat__message-lists__box__text__content">
+                  ${message.content}
+                </p>
               </div>
-            </div>
-            <div class="main-chat__message-lists__box__text">
-              <p class="main-chat__message-lists__box__text__content">
-                ${message.content}
-              </p>
             </div>
           </div>`
       return html

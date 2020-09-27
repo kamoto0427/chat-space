@@ -1,3 +1,19 @@
+## アプリの概要
+中間テーブルを用いたグループチャットができる
+
+## アプリの挙動
+### ユーザーの登録
+![demo](https://gyazo.com/2e08b215f4f135c814fbf89743ddf962/raw)
+
+### ユーザー編集
+![demo](https://gyazo.com/d3b1d28d3f5229a18a6c4d0f8ab8e0f4/raw)
+
+### グループ作成
+![demo](https://gyazo.com/4af88a7a64eca43502401d79c3791341/raw)
+
+### 投稿機能(非同期通信)
+![demo](https://gyazo.com/0b65f86a62adfa1b7b70021eaa621fe7/raw)
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
